@@ -1,15 +1,19 @@
 package com.example.androidsample;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+
 import android.view.Menu;
 
-public class MainActivity extends AppCompatActivity {
+import android.view.MenuItem;
 
+public class MainActivity extends ActionBarActivity {
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     @Override
@@ -22,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
 
-    public boolean onOptionsItemSelected(Menultem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
 

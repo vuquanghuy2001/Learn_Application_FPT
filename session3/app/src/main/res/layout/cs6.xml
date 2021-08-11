@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/formLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Aptech Relative Layout Login Form"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/userNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:text="Username:"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameLabel"
+        android:layout_margin="16dp"
+        android:text="Password:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/userNameTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:hint="User Name"
+        android:layoutftoRightOf="@+id/userNameLabel"
+        android:marginTop="68dp"
+        android:textColorHighlight="#7D9ECO"
+        android:textColorHint="#644e62" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/userNameTextBox"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/passwordLabel"
+        android:hint="Password"
+        android:textColorHighlight="#7D9ECO"
+        android:textColorHint="#644e62" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#lC86EE"
+        android:text="Lets Get Started"
+        android:textColor="#EODFDB"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:marginTop="20dp"
+        android:centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:background="#A2627A"
+        android:text="No Lets Cancel"
+        android:textColor="#EODFDB"
+        android:textStyle="bold" />
+</RelativeLayout>
