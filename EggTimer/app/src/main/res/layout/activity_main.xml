@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="372dp"
+        android:layout_height="18dp"
+        android:Layout_marginStart="5dp"
+        android:Layout_marginEnd="5dp"
+        android:Layout_width="0dp"
+        app:layout_constPaintStart_toStart0f="parent"
+        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintTop_toTopr="parent"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/eggImageView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:Layout_width="wrap_content"
+        app:layout_constPaintBottom_toBottom0f="parent"
+        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStarts="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerSeekBar"
+        app:srcCompat="@drawable/egg" />
+
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:30"
+        android:textSize="60sp"
+        app:layout_constPaintBottom_toBottom0f="parent"
+        app:layout_constPaintTop_toTop0f="parent"
+        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintStart_toStart0f="parent"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:Layout_marginTop="14dp"
+        android:text="GO!"
+        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintHorizonta1_bias="0.5"
+        app:layout_constraintStart_toStart0f="parent"
+        app:layout_constraintTop_toBottomflf="@+id/countdownTextView"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
