@@ -22,7 +22,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<String> titles = new ArrayList<>();
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     while (data != -1){
                         char current = (char) data;
                         articleInfo += current;
-                        data = inputStream.read();
+                        data = inputStreamReader.read();
                     }
                     JSONObject jsonObject = new JSONObject(articleInfo);
                     if (!jsonObject.isNull("title") && !jsonObject.isNull("url")){
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                         while (data != -1){
                             char current = (char) data;
                             articleContent += current;
-                            data = inputStream.read();
+                            data = inputStreamReader.read();
                         }
 
                         Log.i("HTML", articleContent);
