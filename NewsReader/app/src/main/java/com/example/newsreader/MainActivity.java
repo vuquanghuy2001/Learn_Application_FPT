@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         articlesDB.execSQL("CREATE TABLE IF NOT EXISTS articles (id INTEGER PRIMARY KEY, articleId, INTEGER, title VARCHAR, content VARCHAR)");
         DownloadTask task = new DownloadTask();
         try {
-            task.execute("https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty");
+//            task.execute("https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty");
         }catch (Exception e){
 
         }
