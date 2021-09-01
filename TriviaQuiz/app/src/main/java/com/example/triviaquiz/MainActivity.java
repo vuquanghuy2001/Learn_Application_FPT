@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        List<Question> questions = new Repository().getQuestions(questionArrayList -> {
+        questionList = new Repository().getQuestions(questionArrayList -> {
 //            Log.d("Main", "onCreate" + questionArrayList);
             binding.questionTextview.setText(questionArrayList.get(currentQuestionIndex).getAnswer());
         });

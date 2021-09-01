@@ -15,6 +15,7 @@ import java.util.List;
 public class Repository {
     ArrayList<Question> questionArrayList = new ArrayList<>();
     String url = "https://raw.githubusercontent.com/curiousily/simple-quiz/master/script/statements-data.json";
+
     public List<Question> getQuestions(final AnswerListAsyncResponse callback){
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 response -> {
