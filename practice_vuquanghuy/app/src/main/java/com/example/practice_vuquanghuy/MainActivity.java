@@ -22,7 +22,12 @@ import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
-    TextView resultTextView;
+    TextView tempTview;
+    TextView feelsLikeTview;
+    TextView tempMinTView;
+    TextView tempMaxTView;
+    TextView pressureTview;
+    TextView humidityTview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +35,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         editText = findViewById(R.id.editText);
-        resultTextView = findViewById(R.id.tempTview);
+        tempTview = findViewById(R.id.tempTview);
+        feelsLikeTview = findViewById(R.id.feelsLikeTview);
+        tempMinTView = findViewById(R.id.tempMinTview);
+        tempMaxTView = findViewById(R.id.tempMaxTview);
+        pressureTview = findViewById(R.id.pressureTview);
+        humidityTview = findViewById(R.id.humidityTview);
     }
 
     public void getWeather(View view) {
@@ -92,8 +102,8 @@ public class MainActivity extends AppCompatActivity {
                 if(!jsonMain.equals("")){
                     tempTview.setText("Temp: " + temp + "°C" );
                     feelsLikeTview.setText("Feel like:"+ feelsLike + "°C");
-                    tempMinTview.setText("Temp Min: " + tempMin + "°C");
-                    tempMaxTview.setText("Temp Max: " + tempMax + "°C");
+                    tempMinTView.setText("Temp Min: " + tempMin + "°C");
+                    tempMaxTView.setText("Temp Max: " + tempMax + "°C");
                     pressureTview.setText("Pressure: " + pressure + "Hpa");
                     humidityTview.setText("Tumidity: " + humidity + "%");
                 } else {
